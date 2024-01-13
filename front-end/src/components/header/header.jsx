@@ -10,7 +10,7 @@ export default function Header () {
         <div id="header">
             <h1 className="center-vertical" onClick={()=>{navigate("/")}}>Spectrum Interactive</h1>
             <PageButtons />
-            <LoginDisplay />
+            {/*<LoginDisplay />*/}
         </div>
     )
 }

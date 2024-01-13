@@ -15,6 +15,11 @@ html, body, #root, .App {
     --header-height: 80px;
 }
 
+/* Common Components */
+li {
+    margin-left: 40px
+}
+
 /* Utilities for flex-flow */
 .page {
     height: 100%;

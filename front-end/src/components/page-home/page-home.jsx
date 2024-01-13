@@ -1,6 +1,7 @@
 import Header from "../header/header";
-import "./page-home.css";
 import {useNavigate} from "react-router-dom";
+import * as c from "../../constants";
+import "./page-home.css";
 
 export default function PageHome() {
     const navigate = useNavigate()
@@ -9,10 +10,14 @@ export default function PageHome() {
         <div className="page">
             <Header />
             <div id="welcome-area">
-                <div className="flex-column center">
-                    <h1 className="center-horizontal">Welcome</h1>
-                    <p className="service-description">Offer a brief description of the business here.</p>
-                    <button className="center-horizontal" onClick={() => {navigate("/")}}>Contact Us</button>
+                <div id="welcome-text">
+                    <h1 className="center-horizontal">{c.WELCOME_HEADER}</h1>
+                    <p className="service-description">{c.WELCOME_MESSAGE_1}</p>
+                    {c.WELCOME_OPTIONS.map((option) => {
+                        return <li>{option}</li>
+                    })}
+                    <p className="service-description">{c.WELCOME_MESSAGE_2}</p>
+                    <button className="center-horizontal" onClick={() => {navigate("/contact")}}>Contact Us</button>
                 </div>
             </div>
             <div id="services-area">
@@ -20,13 +25,13 @@ export default function PageHome() {
                     <h1 className="center-horizontal">Services</h1>
                     <div className="flex-row center-horizontal">
                         <div className="container-1">
-                            <h3 className="center-horizontal">Lighting</h3>
-                            <div className="service-description">Service 1 description goes here</div>
+                            <h3 className="center-horizontal">{c.LIGHTING_HEADER}</h3>
+                            <div className="service-description">{c.LIGHTING_MESSAGE}</div>
                             <button className="center-horizontal" onClick={() => {navigate("/lighting")}}>Lighting Services</button>
                         </div>
                         <div className="container-1">
-                            <h3 className="center-horizontal">Software Development</h3>
-                            <div className="service-description">Service 2 description goes here</div>
+                            <h3 className="center-horizontal">{c.SOFTWARE_HEADER}</h3>
+                            <div className="service-description">{c.SOFTWARE_MESSAGE}</div>
                             <button className="center-horizontal" onClick={() => {navigate("/software")}}>Software Services</button>
                         </div>
 
