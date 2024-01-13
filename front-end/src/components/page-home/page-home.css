@@ -1,0 +1,21 @@
+#welcome-area {
+    display: flex;
+    width: 100%;
+    background-color: var(--grey-10);
+    flex-grow: 3;
+}
+
+#services-area {
+    display: flex;
+    width: 100%;
+    background-color: var(--grey-20);
+    flex-grow: 1;
+}
+
+.service-description {
+    display: flex;
+    flex-flow: column;
+    margin: 20px;
+    max-width: 500px;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    height: var(--header-height);
+    background-color: var(--primary-20);
+    padding: 0 20px;
+}
+
+#page-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 auto auto;
+}
+
+.page-button {
+    margin: auto 0 auto 20px;
+}

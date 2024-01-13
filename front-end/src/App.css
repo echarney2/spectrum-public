@@ -1,0 +1,71 @@
+html, body, #root, .App {
+    height: 100%;
+
+    --primary-10: #3DEB79;
+    --primary-20: #516B5A;
+    --secondary-10: #EBA63D;
+    --secondary-20: #785996;
+    --grey-10: #E0E0E0;
+    --grey-20: #A0A0A0;
+    --grey-30: #707070;
+    --grey-40: #404040;
+    --grey-50: #202020;
+    --grey-60: #101010;
+
+    --header-height: 80px;
+}
+
+/* Utilities for flex-flow */
+.page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-right {
+    margin-left: auto;
+}
+
+.center {
+    margin: auto;
+}
+
+.center-vertical {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.center-horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Containers */
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-10);
+    border: 2px solid var(--grey-40);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.filler-1 {
+    flex-grow: 1;
+    background-color: var(--grey-40);
+}
