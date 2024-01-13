@@ -1,0 +1,16 @@
+.software-background {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-image: url("../../../public/img/visualizer_screenshot_3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.software-text-area {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+}

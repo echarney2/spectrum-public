@@ -9,35 +9,38 @@ export default function PageHome() {
     return (
         <div className="page">
             <Header />
-            <div id="welcome-area">
-                <div id="welcome-text">
-                    <h1 className="center-horizontal">{c.WELCOME_HEADER}</h1>
-                    <p className="service-description">{c.WELCOME_MESSAGE_1}</p>
-                    {c.WELCOME_OPTIONS.map((option) => {
-                        return <li>{option}</li>
-                    })}
-                    <p className="service-description">{c.WELCOME_MESSAGE_2}</p>
-                    <button className="center-horizontal" onClick={() => {navigate("/contact")}}>Contact Us</button>
+            <div className="scrollable">
+                <div id="welcome-area">
+                    <div id="welcome-text">
+                        <h1 className="center-horizontal">{c.WELCOME_HEADER}</h1>
+                        <p className="service-description">{c.WELCOME_MESSAGE_1}</p>
+                        {c.WELCOME_OPTIONS.map((option) => {
+                            return <li>{option}</li>
+                        })}
+                        <p className="service-description">{c.WELCOME_MESSAGE_2}</p>
+                        <button className="center-horizontal" onClick={() => {navigate("/contact")}}>Contact Us</button>
+                    </div>
                 </div>
-            </div>
-            <div id="services-area">
-                <div className="flex-column center">
-                    <h1 className="center-horizontal">Services</h1>
-                    <div className="flex-row center-horizontal">
-                        <div className="container-1">
-                            <h3 className="center-horizontal">{c.LIGHTING_HEADER}</h3>
-                            <div className="service-description">{c.LIGHTING_MESSAGE}</div>
-                            <button className="center-horizontal" onClick={() => {navigate("/lighting")}}>Lighting Services</button>
-                        </div>
-                        <div className="container-1">
-                            <h3 className="center-horizontal">{c.SOFTWARE_HEADER}</h3>
-                            <div className="service-description">{c.SOFTWARE_MESSAGE}</div>
-                            <button className="center-horizontal" onClick={() => {navigate("/software")}}>Software Services</button>
-                        </div>
+                <div id="services-area">
+                    <div className="flex-column center">
+                        <h1 className="center-horizontal">Services</h1>
+                        <div className="flex-row center-horizontal">
+                            <div className="container-1">
+                                <h3 className="center-horizontal">{c.LIGHTING_HEADER}</h3>
+                                <div className="service-description">{c.LIGHTING_MESSAGE}</div>
+                                <button className="center-horizontal" onClick={() => {navigate("/lighting")}}>Lighting Services</button>
+                            </div>
+                            <div className="container-1">
+                                <h3 className="center-horizontal">{c.SOFTWARE_HEADER}</h3>
+                                <div className="service-description">{c.SOFTWARE_MESSAGE}</div>
+                                <button className="center-horizontal" onClick={() => {navigate("/software")}}>Software Services</button>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }

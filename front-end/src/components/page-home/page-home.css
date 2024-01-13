@@ -25,6 +25,7 @@
     width: 100%;
     background-color: var(--grey-20);
     flex-grow: 0;
+    min-width: 800px;
 }
 
 .service-description {

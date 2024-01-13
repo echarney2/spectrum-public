@@ -1,0 +1,16 @@
+.page-lighting {
+    background-image: url("../../../public/img/lighting_image_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lighting-text {
+    margin: 20px auto auto auto;
+    background-color: var(--secondary-10-transparent);
+    padding: 20px;
+}
+
+
+.video-link {
+    margin: 20px;
+}

@@ -5,8 +5,8 @@ export default function PageButtons () {
     const pages = [
         {name: "Home", path: "/"},
         {name: "Lighting", path: "/lighting"},
-        {name: "Software Development", path: "/software"},
-        {name: "Contact / About Us", path: "/contact"}
+        {name: "Software", path: "/software"},
+        {name: "About Us", path: "/contact"}
     ]
 
     return (
