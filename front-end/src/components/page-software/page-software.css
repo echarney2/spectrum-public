@@ -8,9 +8,18 @@
 }
 
 .software-text-area {
-    display: flex;
-    flex-direction: row;
     margin-top: auto;
     margin-bottom: auto;
     background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+.github-container {
+    max-width: 300px;
+    border: 2px solid var(--grey-40);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--grey-10);
+    flex-direction: column;
 }

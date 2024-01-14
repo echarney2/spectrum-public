@@ -9,12 +9,12 @@ html, body, #root, .App {
     --grey-10: #E0E0E0;
     --grey-20: #A0A0A0;
     --grey-30: #707070;
+    --grey-30-transparent: #707070E0;
     --grey-40: #404040;
     --grey-50: #202020;
     --grey-60: #101010;
 
     --header-height: 80px;
-    min-width: 550px;
 }
 
 /* Common Components */
@@ -41,6 +41,7 @@ li {
 .flex-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex-right {
@@ -72,15 +73,15 @@ li {
     background-color: var(--grey-10);
     border: 2px solid var(--grey-40);
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px auto 30px auto;
     padding: 20px;
 }
 
-.filler-1 {
+.filler {
+    min-width: 10px;
     flex-grow: 1;
-    background-color: var(--grey-40);
 }
 
 .scrollable {
-    overflow-y: scroll;
+    overflow-y: auto;
 }

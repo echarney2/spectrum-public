@@ -24,7 +24,7 @@ export default function PageHome() {
                 <div id="services-area">
                     <div className="flex-column center">
                         <h1 className="center-horizontal">Services</h1>
-                        <div className="flex-row center-horizontal">
+                        <div className="flex-column center-horizontal">
                             <div className="container-1">
                                 <h3 className="center-horizontal">{c.LIGHTING_HEADER}</h3>
                                 <div className="service-description">{c.LIGHTING_MESSAGE}</div>

@@ -1,0 +1,29 @@
+.about-us-text-area {
+    background-color: var(--grey-30-transparent);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-us-text {
+    margin: 20px;
+    max-width: 800px;
+}
+
+.page-contact {
+    background-image: url("../../../public/img/visualizer_screenshot_3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.img-grow {
+    width: 500px;
+    max-width: 100%;
+}
+
+.send-button {
+    margin-left: auto;
+    margin-top: 8px;
+    padding: 4px 8px;
+}

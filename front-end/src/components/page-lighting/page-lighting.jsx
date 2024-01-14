@@ -13,11 +13,11 @@ export default function PageLighting () {
             <div className="scrollable">
 
                 {/* Description of lighting services offered*/}
-                <div className="flex-row">
+                <div className="flex-row center-horizontal">
                     <div className="lighting-text flex-column">
                         <h1 className="center-horizontal">{c.LIGHTING_PAGE_TITLE}</h1>
-                        <div className="service-description">{c.LIGHTING_PAGE_DESCRIPTION}</div>
-                        <button className="center-horizontal" onClick={() => navigate("/contact")}>Contact Us</button>
+                        <p className="service-description">{c.LIGHTING_PAGE_DESCRIPTION}</p>
+                        <p className="service-description">Contact us <a href={"/contact"}>here</a> or send an email to echarney2@gmail.com</p>
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@ export default function PageLighting () {
                             <div className="service-description">{c.SILI_DESCRIPTION_2}</div>
                         </div>
                         <div className="flex-column center">
-                            <img className="opaque" height={300} src="/img/dmx_control_screenshot.png" alt="SILI"></img>
+                            <img className="spectrum-control-img" src="/img/dmx_control_screenshot.png" alt="SILI"></img>
                         </div>
                     </div>
                 </div>

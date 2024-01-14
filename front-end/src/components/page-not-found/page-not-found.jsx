@@ -4,7 +4,8 @@ export default function NotFound() {
     return (
         <div>
             <Header />
-            <h1>Page Not Found</h1>
+            <img className="img-grow" src="/img/dissapointed.jpg" alt="Eric Charney Photo"/>
+            <h1>(Page Not Found)</h1>
         </div>
     )
 }

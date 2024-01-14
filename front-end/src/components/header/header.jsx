@@ -6,7 +6,7 @@ export default function Header () {
     const navigate = useNavigate()
 
     return (
-        <div id="header">
+        <div id="header" className="flex-row">
             <h1 className="center-vertical" onClick={()=>{navigate("/")}}>Spectrum Interactive</h1>
             <PageButtons />
             {/*<LoginDisplay />*/}
