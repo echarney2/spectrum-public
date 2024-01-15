@@ -2,7 +2,6 @@
     display: flex;
     width: 100%;
     background-color: var(--grey-10);
-    min-height: 600px;
     flex-grow: 1;
     background-image: url("../../../public/img/visualizer_screenshot_1.png");
     background-repeat: no-repeat;
@@ -10,13 +9,20 @@
     border-bottom: 3px solid #101010;
 }
 
-#welcome-text {
-    opacity: 0.9;
-    background-color: var(--grey-20);
-    padding: 20px;
+.welcome-text-container {
     display: flex;
     flex-flow: column;
     margin: auto;
+}
+
+#welcome-text {
+    border: 3px solid var(--grey-40);
+    border-radius: 20px;
+    background-color: var(--grey-20-transparent);
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    margin: 100px 20px;
     max-width: 500px;
 }
 
@@ -25,6 +31,8 @@
     width: 100%;
     background-color: var(--grey-20);
     flex-grow: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .service-description {

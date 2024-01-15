@@ -33,8 +33,8 @@ export default function PageLighting () {
                             })}
                             <div className="service-description">{c.SILI_DESCRIPTION_2}</div>
                         </div>
-                        <div className="flex-column center">
-                            <img className="spectrum-control-img" src="/img/dmx_control_screenshot.png" alt="SILI"></img>
+                        <div className="center">
+                            <img width={600} className="img-grow" src="/img/dmx_control_screenshot.png" alt="SILI"></img>
                         </div>
                     </div>
                 </div>
