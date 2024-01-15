@@ -14,5 +14,11 @@
 }
 
 .page-button {
-    margin: auto 0 auto 20px;
+    margin: auto 0 auto 30px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.page-button-selected {
+    border-bottom: 3px solid var(--grey-40);
 }

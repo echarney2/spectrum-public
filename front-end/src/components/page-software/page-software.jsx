@@ -1,31 +1,33 @@
 import Header from "../header/header";
+import * as c from "../../constants";
 import "./page-software.css";
 
 export default function PageSoftware() {
     return (
-        <div className="page">
-            <Header />
-            <div className="software-background">
-                <div className="software-text-area flex-row">
-                    <div className="flex-column center">
-                        <h1 className="center-horizontal">Software Services</h1>
-                        <div className="service-description">
+        <div className="page page-software">
+            <Header page="/software"/>
+            <div className="scrollable">
 
-                            <p>We will work closely with you to understand your specific needs and challenges, and collaborate with you to determine the best solution for you or your business. </p>
-                            <p>Whether it's an off-the-shelf product or a custom built system, we'll ensure that it's cost effective and delivers the highest possible value. We specialize in:</p>
-
-                            <li>Full-stack cloud-based web applications</li>
-                            <li>Desktop Applications</li>
-                            <li>Control, Automation, and Testing</li>
-                            <p>Contact us <a href={"/contact"}>here</a> or send an email to echarney2@gmail.com</p>
+                    <div className="software-text-area flex-row center-vertical">
+                        <div className="flex-column center">
+                            <h1 className="center-horizontal">{c.SOFTWARE_PAGE_TITLE}</h1>
+                            <div className="service-description">
+                                <p>{c.SOFTWARE_PAGE_DESCRIPTION_1}</p>
+                                <p>{c.SOFTWARE_PAGE_DESCRIPTION_2}</p>
+                                {c.SOFTWARE_SERVICES_LIST.map(service => {
+                                    return <li>{service}</li>
+                                })}
+                                <p>Contact us <a href={"/contact"}>here</a> or send an email to echarney2@gmail.com</p>
+                            </div>
+                        </div>
+                        <div className="flex-column center">
+                            <div className="github-container">
+                                <p>Note: This website was developed in React and is hosted on AWS. Find the source code on github <a href="https://github.com/echarney2/spectrum-public">here</a>.</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex-column center">
-                        <div className="github-container">
-                            <p>Note: This application was developed in React and is hosted on AWS. Find the source code on github <a href="https://github.com/echarney2/spectrum-public">here</a>.</p>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
         </div>
     )

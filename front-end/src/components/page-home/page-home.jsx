@@ -10,7 +10,7 @@ export default function PageHome() {
 
     return (
         <div className="page">
-            <Header />
+            <Header page="/"/>
             <div className="scrollable">
                 <div id="welcome-area">
                     <div className="welcome-text-container">

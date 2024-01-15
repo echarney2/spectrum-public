@@ -1,3 +1,4 @@
+// -------- Welcome Page --------
 export const WELCOME_HEADER = "Welcome!"
 export const WELCOME_MESSAGE_1 = "Spectrum Interactive is an event lighting and software development " +
     "company offering contracting and consulting services. We are proud to serve the Denver Metro Area with:"
@@ -19,11 +20,8 @@ export const SOFTWARE_MESSAGE = "Let us put our 7+ years of full stack software 
     "for you. We specialize in web and desktop applications using Python and React, but will work with you to choose the " +
     "right stack for your project."
 
-export const VIDEO_LINKS = [
-    "https://www.youtube.com/embed/62HgKCfD6ZU?si=EUowFFFR1fJzYKVT",
-    "https://www.youtube.com/embed/mq03eG8tv18?si=U4RAiIF9CwkmoklG"
-]
 
+// -------- Lighting Page --------
 export const LIGHTING_PAGE_TITLE = "Spectrum Interactive Lighting"
 export const LIGHTING_PAGE_DESCRIPTION = "We use our in-house software SILI to create an experience unique to " +
     "your music, event, and location. Work with us to build your own color palettes, queues, and effects. Now serving " +
@@ -40,4 +38,20 @@ export const SILI_FEATURES = [
 
 export const SILI_DESCRIPTION_2 = "Below you can find examples of SILI in action."
 
+export const VIDEO_LINKS = [
+    "https://www.youtube.com/embed/62HgKCfD6ZU?si=EUowFFFR1fJzYKVT",
+    "https://www.youtube.com/embed/mq03eG8tv18?si=U4RAiIF9CwkmoklG"
+]
 
+
+// -------- Software Page --------
+export const SOFTWARE_PAGE_TITLE = "Software Services"
+export const SOFTWARE_PAGE_DESCRIPTION_1 =  "We will work closely with you to understand your specific needs " +
+    "and challenges, and collaborate with you to determine the best solution for you or your business. "
+export const SOFTWARE_PAGE_DESCRIPTION_2 = "Whether it's an off-the-shelf product or a custom built system, we'll " +
+    "ensure that it's cost effective and delivers the highest possible value. We specialize in:"
+export const SOFTWARE_SERVICES_LIST = [
+    "Full-stack cloud-based web applications",
+    "Desktop Applications",
+    "Control, Automation, and Testing"
+]

@@ -1,23 +1,18 @@
 import Header from "../header/header";
 import {useState} from "react";
 import "./page-contact.css";
+import ContactForm from "./contact-form";
 
 export default function PageContact() {
-    const [subject, setSubject] = useState("")
-    const [message, setMessage] = useState("")
-
-    const onSubmit = (evt) => {
-        alert('Contact Us form has not been implemented yet. Please send your message directly to echarney2@gmail.com')
-    }
 
     return (
         <div className="page page-contact">
-            <Header />
+            <Header page="/contact"/>
 
             <div className="scrollable">
                 <div className="flex-row center-vertical about-us-text-area">
-                    <div className="flex-column center-horizontal">
-                        <img width={500} className="img-grow" src="/img/eric-photo.jpg" alt="Eric Charney Photo"/>
+                    <div className="flex-column center-horizontal padding-r-30">
+                        <img width={500} className="img-grow margin-r-20" src="/img/eric-photo.jpg" alt="Eric Charney Photo"/>
                     </div>
                     <div className="flex-column center">
                         <h1 className="center-horizontal">About Us</h1>
@@ -27,28 +22,10 @@ export default function PageContact() {
                 </div>
                 <div className="flex-row center-vertical">
                     <div className="center-horizontal">
-                        <div className="flex-column about-us-text-area">
-                            <h1 className="center-horizontal">Contact Us</h1>
-                            <label>Name</label>
-                            <input></input>
-                            <label>Email</label>
-                            <input></input>
-                            <label>Subject</label>
-                            <input></input>
-                            <label>Message</label>
-                            <textarea></textarea>
-                            <button className="send-button" onClick={onSubmit}>Send</button>
-                            <div className="service-description">Or send an email to echarney2@gmail.com</div>
-                        </div>
-                    </div>
-
-                    <div className="flex-column">
+                        <ContactForm/>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     )
 }

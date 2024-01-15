@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 
-export default function PageButtons () {
+export default function PageButtons ({page}) {
     const navigate = useNavigate()
     const pages = [
         {name: "Home", path: "/"},
@@ -11,8 +11,9 @@ export default function PageButtons () {
 
     return (
         <div id="page-buttons">
-            {pages.map( (page) => {
-                return <div className="page-button" onClick={()=>{navigate(page.path)}}>{page.name}</div>
+            {pages.map( (p) => {
+                const className = p.path === page ? "page-button page-button-selected" : "page-button"
+                return <div className={className} onClick={()=>{navigate(p.path)}}>{p.name}</div>
             })}
         </div>
     )
