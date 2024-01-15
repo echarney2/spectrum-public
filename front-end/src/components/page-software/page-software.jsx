@@ -17,7 +17,7 @@ export default function PageSoftware() {
                                 {c.SOFTWARE_SERVICES_LIST.map(service => {
                                     return <li>{service}</li>
                                 })}
-                                <p>Contact us <a href={"/contact"}>here</a> or send an email to echarney2@gmail.com</p>
+                                <p>Send an email <a href="mailto:echarney2@gmail.com">echarney2@gmail.com</a> to get started with a free consultation.</p>
                             </div>
                         </div>
                         <div className="flex-column center">

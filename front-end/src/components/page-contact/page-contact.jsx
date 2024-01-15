@@ -16,8 +16,8 @@ export default function PageContact() {
                     </div>
                     <div className="flex-column center">
                         <h1 className="center-horizontal">About Us</h1>
-                        <p className="about-us-text">Spectrum Interactive is owned and operated by Eric Charney, a Physicist and Software Developer based out of Denver Colorado. Eric has 7 years of professional experience as a software developer ranging from test/manufacturing to physics research to e-commerce. You can find Eric's full professional resume <a href="/Eric-Charney-Resume.pdf">here</a>.</p>
-                        <p className="about-us-text">Eric has a lifelong passion for music, science, and technology and is always looking for ways to fuse the three together. Eric originally designed the Spectrum Interactive Lighting Instrument for use in his local bands Zero Player Game, Tezca, and Koion Kitten</p>
+                        <p className="about-us-text">Spectrum Interactive is owned and operated by Eric Charney, a Physicist and Software Developer based out of Denver Colorado. Eric has 7 years of professional experience ranging from test/manufacturing to physics research to web development. You can find Eric's full professional resume <a href="/Eric-Charney-Resume.pdf">here</a>.</p>
+                        <p className="about-us-text">Eric has a lifelong passion for music, science, and technology and is always looking for ways to fuse the three together. Eric originally designed the Spectrum Interactive Lighting Instrument for use in his local bands Zero Player Game, Tezca, and Koion Kitten.</p>
                     </div>
                 </div>
                 <div className="flex-row center-vertical">

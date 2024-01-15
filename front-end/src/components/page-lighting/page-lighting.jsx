@@ -18,7 +18,7 @@ export default function PageLighting () {
                         <div className="lighting-text flex-column">
                             <h1 className="center-horizontal">{c.LIGHTING_PAGE_TITLE}</h1>
                             <p className="service-description">{c.LIGHTING_PAGE_DESCRIPTION}</p>
-                            <p className="service-description">Contact us <a href={"/contact"}>here</a> or send an email to echarney2@gmail.com</p>
+                            <p className="service-description">For info and booking, reach out to <a href="mailto:echarney2@gmail.com">echarney2@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ export default function PageLighting () {
                                 })}
                                 <div className="service-description">{c.SILI_DESCRIPTION_2}</div>
                             </div>
-                            <div className="center margin-r-20">
+                            <div className="center padding-r-20">
                                 <img width={600} className="img-grow" src="/img/dmx_control_screenshot.png" alt="SILI"></img>
                             </div>
                         </div>

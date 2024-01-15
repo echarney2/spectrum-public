@@ -23,7 +23,7 @@ export const SOFTWARE_MESSAGE = "Let us put our 7+ years of full stack software 
 
 // -------- Lighting Page --------
 export const LIGHTING_PAGE_TITLE = "Spectrum Interactive Lighting"
-export const LIGHTING_PAGE_DESCRIPTION = "We use our in-house software SILI to create an experience unique to " +
+export const LIGHTING_PAGE_DESCRIPTION = "We use our in-house software to create an experience unique to " +
     "your music, event, and location. Work with us to build your own color palettes, queues, and effects. Now serving " +
     "bands, DJs, venues, and producers in the Denver Metro Area."
 
