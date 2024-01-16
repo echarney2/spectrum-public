@@ -11,9 +11,9 @@ export default function PageButtons ({page}) {
 
     return (
         <div id="page-buttons">
-            {pages.map( (p) => {
+            {pages.map( (p, index) => {
                 const className = p.path === page ? "page-button page-button-selected" : "page-button"
-                return <div className={className} onClick={()=>{navigate(p.path)}}>{p.name}</div>
+                return <div key={index} className={className} onClick={()=>{navigate(p.path)}}>{p.name}</div>
             })}
         </div>
     )

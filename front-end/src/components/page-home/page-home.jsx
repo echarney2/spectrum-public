@@ -17,8 +17,8 @@ export default function PageHome() {
                         <div id="welcome-text">
                             <h1 className="center-horizontal">{c.WELCOME_HEADER}</h1>
                             <p className="service-description">{c.WELCOME_MESSAGE_1}</p>
-                            {c.WELCOME_OPTIONS.map((option) => {
-                                return <li>{option}</li>
+                            {c.WELCOME_OPTIONS.map((option, index) => {
+                                return <li key={index}>{option}</li>
                             })}
                             <p className="service-description">{c.WELCOME_MESSAGE_2}</p>
                             <button className="center-horizontal" onClick={() => {navigate("/contact")}}>Contact Us</button>

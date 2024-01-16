@@ -14,8 +14,8 @@ export default function PageSoftware() {
                             <div className="service-description">
                                 <p>{c.SOFTWARE_PAGE_DESCRIPTION_1}</p>
                                 <p>{c.SOFTWARE_PAGE_DESCRIPTION_2}</p>
-                                {c.SOFTWARE_SERVICES_LIST.map(service => {
-                                    return <li>{service}</li>
+                                {c.SOFTWARE_SERVICES_LIST.map((service, index) => {
+                                    return <li key={index}>{service}</li>
                                 })}
                                 <p>Send an email <a href="mailto:echarney2@gmail.com">echarney2@gmail.com</a> to get started with a free consultation.</p>
                             </div>
